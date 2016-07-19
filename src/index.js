@@ -1,6 +1,7 @@
 import angular from 'angular';
 
-import {hello} from './app/hello';
+import {game} from './app/game';
+import {cell} from './app/cell/cell';
 import 'angular-ui-router';
 import routesConfig from './routes';
 
@@ -11,4 +12,5 @@ export const app = 'app';
 angular
   .module(app, ['ui.router'])
   .config(routesConfig)
-  .component('app', hello);
+  .component('app', game)
+  .component('cell', cell);

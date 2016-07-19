@@ -1,11 +1,11 @@
 import angular from 'angular';
 import 'angular-mocks';
-import {hello} from './hello';
+import {hello} from './game';
 
 describe('hello component', () => {
   beforeEach(() => {
     angular
-      .module('fountainHello', ['app/hello.html'])
+      .module('fountainHello', ['app/game.html'])
       .component('fountainHello', hello);
     angular.mock.module('fountainHello');
   });
